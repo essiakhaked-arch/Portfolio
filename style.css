@@ -1,0 +1,1046 @@
+/* --- CONFIGURATION GLOBALE --- */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body {
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-color: black;
+    color: white;
+}
+/* --- HEADER & NAVIGATION --- */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2.5rem 9%;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+.logo {
+    font-size: 3rem;
+    color: white;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3s ease;
+
+}
+.logo a {
+    color: white;
+
+}
+.logo span {
+    color: #b74b4b;
+    text-shadow: 0 0 10px rgba(183, 75, 75, 0.9);
+
+}
+.logo:hover {
+    transform: scale(1.05);
+
+}
+nav a {
+    font-size: 1.8rem;
+    color: white;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+
+}
+nav a:hover,
+nav a.active {
+    color: #b74b4b;
+    border-bottom: 3px solid #b74b4b;
+}
+/* --- SECTION HOME --- */
+
+section {
+
+    min-height: 100vh;
+    padding: 15rem 9% 2rem;
+
+}
+.home {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+
+}
+
+.home-imag {
+
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 25px rgba(183, 75, 75, 0.5);
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+    flex-shrink: 0;
+}
+
+.home-imag img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.home-imag:hover {
+
+    box-shadow: 0 0 50px #b74b4b;
+    animation: animate 1.5s ease-in-out infinite;
+
+}
+
+@keyframes animate {
+
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+
+}
+
+.home-content h1 {
+    font-size: 8rem;
+    font-weight: 700;
+    line-height: 1.1;
+    color: white;
+    margin-bottom: 1rem;
+
+}
+.home-content h1 span {
+
+    color: #b74b4b;
+
+}
+
+.home-content h3 {
+
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+
+}
+
+.description {
+
+    font-size: 1.6rem;
+    margin: 2rem 0;
+    line-height: 1.6;
+    max-width: 600px;
+
+}
+.typewriter-text {
+
+    color: #b74b4b;
+    font-weight: 700;
+    text-shadow: 0 0 10px rgba(183, 75, 75, 0.5);
+
+}
+.cursor {
+
+    color: white;
+    margin-left: 5px;
+    font-weight: 300;
+    animation: blink 0.7s infinite;
+
+}
+
+@keyframes blink {
+
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+
+}
+
+.social-icons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4.5rem;
+    height: 4.5rem;
+    background-color: transparent;
+    border: 0.2rem solid #b74b4b;
+    font-size: 2.2rem;
+    border-radius: 50%;
+    color: #b74b4b;
+    margin: 3rem 1.5rem 3rem 0;
+    transition: 0.3s ease;
+
+}
+
+.social-icons a:hover {
+
+    color: black;
+    transform: translateY(-5px) scale(1.1);
+    background-color: #b74b4b;
+    box-shadow: 0 0 25px #b74b4b;
+
+}
+
+.btn-group {
+
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1.2rem 2.8rem;
+    background-color: #b74b4b;
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    color: black;
+    letter-spacing: 0.1rem;
+    font-weight: 700;
+    transition: 0.3s ease;
+    border: 0.2rem solid #b74b4b;
+    cursor: pointer;
+}
+.btn:hover {
+
+    transform: scale(1.05);
+    background-color: white;
+    border-color: white;
+    box-shadow: 0 0 20px white;
+
+}
+/* --- SECTION ABOUT ME --- */
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 10rem 9% 2rem;
+
+}
+.about-container {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    width: 100%;
+}
+.about-img {
+
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 25px rgba(183, 75, 75, 0.5);
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+    flex-shrink: 0;
+
+}
+.about-img img {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.about-img:hover {
+
+    box-shadow: 0 0 50px #b74b4b;
+    animation: animate 1.5s ease-in-out infinite;
+
+}
+.heading {
+
+    font-size: 5rem;
+    margin-bottom: 3rem;
+    text-align: left;
+
+}
+
+.heading span {
+    color: #ffffff;
+
+}
+
+.about-content h3 {
+
+    font-size: 3rem;
+    color: white;
+
+}
+
+.about-content p {
+
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
+    line-height: 1.8;
+
+}
+
+/* --- SECTION SKILLS --- */
+
+.skills {
+
+    background-color: black;
+    padding: 10rem 9% 5rem;
+    text-align: center;
+
+}
+
+.skills .heading {
+
+    margin-bottom: 5rem;
+    text-align: center;
+
+}
+
+.skills-container {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 3rem;
+
+}
+.skill-box {
+
+    background: rgba(183, 75, 75, 0.05);
+    border: 0.2rem solid #b74b4b;
+    padding: 3rem 2rem;
+    border-radius: 2rem;
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.skill-box:hover {
+
+    box-shadow: 0 0 25px #ffffff;
+    transform: scale(1.05);
+
+}
+.skill-box img {
+
+    width: 60px;
+    height: 60px;
+    margin-bottom: 1.5rem;
+    object-fit: contain;
+
+}
+
+.skill-box h3 {
+
+    font-size: 1.8rem;
+    color: white;
+    margin-bottom: 1.5rem;
+
+}
+
+.progress-container {
+
+    width: 100%;
+    height: 1rem;
+    background: #444;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    overflow: hidden;
+
+}
+
+.progress-bar {
+
+    height: 100%;
+    background: #b74b4b;
+    border-radius: 1rem;
+    width: 0%;
+    transition: 2s cubic-bezier(0.1, 0, 0.1, 1);
+
+}
+.skills.active .p-100 { width: 100%; }
+.skills.active .p-70  { width: 70%; }
+.skills.active .p-60  { width: 60%; }
+.skill-box span {
+
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #ffffff;
+
+}
+/* --- SECTION EDUCATION (NOUVEAU CSS) --- */
+
+.education {
+
+    background-color: black;
+    padding: 10rem 9% 5rem;
+
+}
+.education .heading {
+
+    text-align: center;
+    margin-bottom: 5rem;
+
+}
+
+.education-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    border-left: 0.2rem solid #b74b4b;
+    padding-left: 3rem;
+
+}
+
+
+.education-box.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+
+}
+
+.education-box {
+
+    width: 100%;
+    position: relative;
+    margin-bottom: 2rem;
+
+}
+
+.education-box::before {
+    content: '';
+    position: absolute;
+    left: -4.1rem;
+    top: 2.5rem;
+    width: 2rem;
+    height: 2rem;
+    background: #b74b4b;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #b74b4b;
+}
+
+.education-content .content {
+
+    background: rgba(183, 75, 75, 0.05);
+    border: 0.2rem solid #b74b4b;
+    padding: 2.5rem;
+    border-radius: 2rem;
+    transition: 0.4s ease;
+}
+.education-content .content:hover {
+    box-shadow: 0 0 25px #b74b4b;
+    transform: scale(1.02);
+
+}
+
+
+
+.edu-logo {
+    width: 120px;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+
+}
+
+.education-content .content .year {
+
+    font-size: 1.6rem;
+    color: #b74b4b;
+    font-weight: 700;
+
+}
+
+.education-content .content h3 {
+
+    font-size: 2.2rem;
+
+    color: white;
+
+}
+
+.education-content .content p {
+    font-size: 1.6rem;
+    color: white;
+    margin-top: 1rem;
+    line-height: 1.5;
+}
+
+/* --- RESPONSIVE --- */
+
+@media (max-width: 995px) {
+    header { padding: 2rem 5%; }
+    nav a { font-size: 1.6rem; margin-left: 2rem; }
+    .home { flex-direction: column-reverse; text-align: center; gap: 4rem; padding-top: 10rem; }
+    .home-imag { width: 250px; height: 250px; }
+    .home-content h1 { font-size: 4rem; }
+    .home-content h3 { font-size: 2.5rem; }
+    .btn-group { justify-content: center; }
+    .about { padding-top: 5rem; }
+    .about-container { flex-direction: column; text-align: center; gap: 5rem; }
+    .about-img { width: 250px; height: 250px; margin-top: 4rem; }
+    .heading { text-align: center; font-size: 4rem; }
+    .skills-container { grid-template-columns: repeat(2, 1fr); }
+
+}
+/* Style pour la section Projet */
+/* --- SECTION PROJECT (SYMÉTRIE PARFAITE) --- */
+.project {
+    background: black;
+    padding: 10rem 9% 5rem;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch; /* Force les deux boîtes à avoir la même hauteur */
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.project-box {
+    flex: 1;
+    min-width: 350px;
+    max-width: 450px; /* Fixe une largeur max identique */
+    height: 450px;    /* Force une hauteur fixe pour la symétrie */
+    background: rgba(183, 75, 75, 0.05);
+    border: 0.2rem solid #b74b4b;
+    border-radius: 2rem;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centre tout le contenu verticalement */
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+/* Conteneur d'image pour que Coffee et Poppy fassent la même taille */
+.project-box img {
+    width: 100%;
+    height: 200px;       /* Taille fixe pour l'image */
+    object-fit: contain; /* L'image s'adapte sans se déformer */
+    margin-bottom: 2rem;
+    background: transparent;
+}
+
+.project-box h3 {
+    font-size: 2.8rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.project-box p {
+    font-size: 1.6rem;
+    color: #eee;
+}
+
+/* Effet Glow au survol identique aux services */
+.project-box:hover {
+    background: #b74b4b;
+    box-shadow: 0 0 40px #b74b4b;
+    transform: translateY(-10px);
+}
+
+.project-box:hover h3, 
+.project-box:hover p {
+    color: white;
+}
+/* La fenêtre de détails (Overlay) */
+.project-detail-overlay {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.9); z-index: 1000;
+    display: none; align-items: center; justify-content: center;
+
+}
+.detail-content {
+    background: #1f242d; border: 2px solid #b74b4b; padding: 4rem;
+    border-radius: 2rem; width: 80%; position: relative;
+}
+
+.close-detail { position: absolute; top: 2rem; right: 2rem; font-size: 2.5rem; color: #b74b4b; cursor: pointer; }
+
+/* Grille interne de l'overlay */
+
+.detail-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; }
+.main-img { width: 100%; border-radius: 1rem; background: white; }
+.thumbs { display: flex; gap: 1rem; margin-top: 1rem; }
+.thumbs img { width: 80px; cursor: pointer; background: white; border-radius: 0.5rem; }
+.tool-badge { background: #b74b4b; padding: 0.5rem 1rem; border-radius: 2rem; margin-right: 0.5rem; font-size: 1.2rem; }
+
+/* Animation d'ouverture de la fenêtre projet */
+
+.detail-content {
+
+    animation: zoomIn 0.4s ease forwards;
+}
+@keyframes zoomIn {
+
+    from { opacity: 0; transform: scale(0.8); }
+    to { opacity: 1; transform: scale(1); }
+
+}
+
+/* Animation au survol des petites images */
+
+.thumbs img {
+
+    transition: 0.3s ease;
+
+}
+
+.thumbs img:hover {
+
+    transform: translateY(-5px);
+    border: 2px solid #b74b4b;
+
+}
+
+/* Transition douce pour l'image principale */
+
+.main-img {
+
+    transition: opacity 0.3s ease;
+}
+
+/* Supprime le fond blanc des boîtes de projet */
+
+.project-box img {
+
+    width: 100%;
+    transition: .5s ease;
+    background: #111; /* Fond très sombre au lieu de blanc */
+    padding: 1rem;
+
+}
+/* Modifie l'image principale dans l'overlay */
+
+.main-img {
+    width: 100%;
+    border-radius: 1rem;
+    background: #111; /* Fond sombre */
+    border: 1px solid #333; /* Optionnel : petite bordure discrète */
+}
+/* Modifie les miniatures (thumbnails) */
+
+.thumbs img {
+
+    width: 80px;
+    cursor: pointer;
+    background: #111; /* Fond sombre */
+    border-radius: 0.5rem;
+    border: 2px solid transparent;
+}
+/* --- AJUSTEMENT DU TEXTE DANS L'OVERLAY PROJET --- */
+/* Titre principal (ex: Coffee Nova) */
+.detail-text h2 {
+    font-size: 3.5rem; /* Augmenté */
+    margin-bottom: 1rem;
+    color: white;
+
+}
+
+/* Le Rôle (ex: Graphic Design) */
+.detail-text h4 {
+    font-size: 2rem; /* Augmenté */
+    margin-bottom: 2rem;
+    color: #b74b4b; /* Utilise ta couleur d'accentuation */
+}
+/* La description du projet */
+
+.detail-text p {
+    font-size: 1.8rem; /* Augmenté pour une meilleure lecture */
+    line-height: 1.6;
+    margin-bottom: 3rem;
+    color: #ccc; /* Un gris clair pour le confort visuel */
+
+}
+/* Taille des badges d'outils (Photoshop/Illustrator) */
+
+.tool-badge {
+    font-size: 1.4rem; /* Légèrement plus grand */
+    padding: 0.8rem 1.5rem;
+
+}
+/* === AJUSTEMENT TEXTE DANS L'OVERLAY POPPY === */
+
+.detail-text h2 {
+    font-size: 3.5rem; /* Agrandissement du titre */
+    margin-bottom: 1rem;
+    color: white;
+
+}
+.detail-text h4 {
+
+    font-size: 2rem; /* Agrandissement du rôle */
+    margin-bottom: 2rem;
+    color: #b74b4b; /* Ta couleur d'accentuation rouge/marron */
+
+}
+.detail-text p {
+
+    font-size: 1.8rem; /* Agrandissement pour lisibilité */
+    line-height: 1.6;
+    margin-bottom: 3rem;
+    color: #ccc; /* Gris clair pour confort de lecture */
+
+}
+.tool-badge {
+
+    background: #b74b4b;
+    padding: 0.8rem 1.5rem;
+    border-radius: 2rem;
+    margin-right: 0.5rem;
+    font-size: 1.4rem;
+    color: black;
+    font-weight: bold;
+
+}
+
+/* === STYLE SPÉCIFIQUE POUR FENÊTRE À UNE SEULE PHOTO === */
+/* Centre l'image verticalement dans sa grille */
+
+.detail-gallery {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+}
+.main-img.full-view {
+
+    max-height: 80vh; /* Ajuste pour que l'image ne dépasse pas de l'écran */
+
+    width: auto; /* Garde le ratio de l'image */
+    object-fit: contain; /* S'assure que toute l'image est visible */
+    border: 1px solid #333; /* Petite bordure discrète */
+    background: #111; /* Fond très sombre pour éviter le blanc */
+
+}
+
+/* === ANIMATION D'OUVERTURE DE L'OVERLAY === */
+
+.detail-content {
+    animation: zoomIn 0.4s ease forwards;
+    transform: scale(0.8);
+    opacity: 0;
+
+}
+
+@keyframes zoomIn {
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+
+    }
+
+} 
+/* --- CORRECTION OVERLAY PROJET --- */
+.project-detail-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.95);
+    z-index: 2000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+.detail-content {
+    background: #161a21; /* Fond un peu plus sombre et pro */
+    border: 1px solid rgba(183, 75, 75, 0.3);
+    padding: 4rem;
+    border-radius: 2.5rem;
+    max-width: 1100px;
+    width: 95%;
+    position: relative;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.5);
+}
+
+.detail-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr; /* Équilibre image/texte */
+    gap: 4rem;
+    align-items: start;
+}
+
+/* Galerie */
+.main-img {
+    width: 100%;
+    height: 400px;
+    object-fit: contain; /* Évite de déformer ton logo */
+    border-radius: 1.5rem;
+    background: #fff; /* Fond blanc pour bien voir le logo noir */
+    padding: 2rem;
+    transition: 0.3s ease;
+}
+
+.thumbs {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.thumbs img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 0.8rem;
+    background: #fff;
+    padding: 5px;
+    border: 2px solid transparent;
+    transition: 0.3s;
+}
+
+.thumbs img:hover {
+    border-color: #b74b4b;
+    transform: translateY(-3px);
+}
+
+/* Texte */
+.detail-text h2 {
+    font-size: 4rem;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+.detail-text h4 {
+    font-size: 1.8rem;
+    color: #b74b4b;
+    margin-bottom: 2rem;
+    font-weight: 400;
+}
+
+.detail-text p {
+    font-size: 1.6rem;
+    color: #adb5bd;
+    line-height: 1.7;
+    margin-bottom: 3rem;
+}
+
+.tool-badge {
+    display: inline-block;
+    background: rgba(183, 75, 75, 0.15);
+    color: #b74b4b;
+    padding: 0.6rem 1.4rem;
+    border-radius: 5rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-right: 1rem;
+    border: 1px solid rgba(183, 75, 75, 0.3);
+}
+
+/* Palette de couleurs */
+.color-palette {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.color-circle {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: help;
+}
+
+/* Mobile Responsive */
+@media (max-width: 850px) {
+    .detail-grid { grid-template-columns: 1fr; }
+    .detail-content { padding: 2rem; height: 90vh; overflow-y: auto; }
+    .main-img { height: 250px; }
+}
+
+
+
+/* Supprime le fond blanc des boîtes de projet dans la galerie principale */
+.project-box img { 
+    width: 100%; 
+    transition: .5s ease; 
+    background: transparent; /* Changé de #111 ou white à transparent */
+    padding: 0; /* Suppression du padding pour que l'image prenne toute la place */
+    object-fit: contain;
+}
+
+/* Modifie l'image principale dans l'overlay (Modal) */
+.main-img { 
+    width: 100%; 
+    height: 400px;
+    object-fit: contain; 
+    border-radius: 1.5rem; 
+    background: transparent; /* Changé de #fff à transparent */
+    padding: 0;
+    transition: 0.3s ease;
+}
+
+/* Modifie les miniatures (thumbnails) dans l'overlay */
+.thumbs img { 
+    width: 70px; 
+    height: 70px; 
+    object-fit: contain; 
+    cursor: pointer; 
+    border-radius: 0.8rem; 
+    background: transparent; /* Changé de #fff à transparent */
+    padding: 5px; 
+    border: 2px solid transparent;
+    transition: 0.3s;
+}
+
+
+/* Style de base des badges (Rouge avec lueur au survol) */
+.tool-badge {
+    display: inline-block;
+    background: #b74b4b; /* Ta couleur rouge */
+    color: white; 
+    padding: 0.8rem 2rem;
+    border-radius: 5rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-right: 1rem;
+    border: 2px solid #b74b4b;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Effet de lueur au survol (Glow rouge) */
+.tool-badge:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(183, 75, 75, 0.6);
+}
+
+/* État "Activé" (Quand on clique dessus) */
+/* Note : Il faudra ajouter cette classe via JavaScript au clic */
+.tool-badge.active-glow {
+    background-color: white;
+    color: black;
+    border-color: white;
+    box-shadow: 0 0 25px white; /* Lueur blanche comme sur ta photo */
+}
+
+
+
+
+
+/* --- SECTION SERVICES --- */
+.services {
+    background: black;
+    padding: 10rem 9% 5rem;
+}
+
+.services .heading {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.service-box {
+    flex: 1;
+    min-width: 320px;
+    max-width: 500px;
+    background: rgba(183, 75, 75, 0.05); /* Fond très léger */
+    border: 0.2rem solid #b74b4b;
+    padding: 4rem 3rem;
+    border-radius: 2rem;
+    text-align: center;
+    transition: 0.5s ease;
+}
+
+/* Effet de lueur au survol (comme ton image) */
+.service-box:hover {
+    background: #b74b4b; /* Devient rouge */
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 0 0 40px #b74b4b;
+}
+
+.service-box i {
+    font-size: 5rem;
+    color: #ffffff;
+    margin-bottom: 2rem;
+    transition: 0.3s ease;
+}
+
+.service-box:hover i {
+    color: white; /* L'icône change aussi au survol */
+}
+
+.service-box h3 {
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
+}
+
+.service-list {
+    text-align: left; /* Aligné à gauche pour la liste */
+}
+
+.service-list p {
+    font-size: 1.5rem;
+    margin-bottom: 1.2rem;
+    line-height: 1.4;
+    position: relative;
+    padding-left: 20px;
+}
+
+/* Petites flèches devant les points */
+.service-list p::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: #b74b4b;
+}
+
+.service-box:hover .service-list p::before {
+    color: white;
+}
+
+/* Responsive pour tablettes/mobiles */
+@media (max-width: 768px) {
+    .services-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
